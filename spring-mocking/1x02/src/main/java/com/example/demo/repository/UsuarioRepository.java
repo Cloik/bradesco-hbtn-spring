@@ -8,5 +8,7 @@ import java.util.Optional;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
-    Optional<Usuario> findById(Long id); // declaração explícita para satisfazer o verificador
+    Optional<Usuario> findById(Long id);
+    Usuario save(Usuario usuario); 
 }
+
